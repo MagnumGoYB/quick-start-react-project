@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# 快速构建一个 React 项目
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 本地开发
 
-## Available Scripts
+```bash
+$ git clone git@gitlab.stars-mine.com:topholder-fe/topholder-h5.git
+$ npm install && npm start
+```
 
-In the project directory, you can run:
+打开浏览器访问 http://localhost:3000
 
-### `yarn start`
+## 代码规范
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**提交代码时将使用 [husky](https://typicode.github.io/husky/) 工具进行 eslint + prettier 格式化**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React Components (自定义组件) - 首字母大写+驼峰
+- Custom Hooks (自定义 Hook) - 遵循 React 官方规范
+- 变量、常量使用首字母小写+驼峰
 
-### `yarn test`
+## 提交代码
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+项目中依赖 [Commitlint](https://commitlint.js.org/) + [Gitmoji](https://gitmoji.dev/) 进行 Commit Messages 检查
 
-### `yarn build`
+- [Gitmoji Commit Message 规范](https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/commitlint-config)
+- [规范引导](https://www.yuque.com/arvinxx-fe/workflow/gcm-v2)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 格式
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```markdown
+:gitmoji: type: message
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### type
 
-### `yarn eject`
+- feat: 新功能
+- fix: 修复问题
+- docs: 修改文档
+- ci: 修复 CI 构建问题
+- style: 修改代码格式，不影响代码逻辑
+- refactor: 重构代码，理论上不影响现有功能
+- perf: 提升性能
+- revert: 恢复代码
+- test: 增加修改测试用例
+- chore: 修改工具相关（包括但不限于文档、代码生成等）
+- wip: 工作进行中
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### gitmoji
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Gitmoji 参考手册](https://gitmoji.dev/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 示例
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+$ git add .
+$ git commit -m ":bug: fix: 修复一个 BUG"
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+$ git add .
+$ git commit -m ":sparkles: feat: 增加一个新功能"
+```
