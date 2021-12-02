@@ -1,15 +1,19 @@
-# 快速开始一个 React 项目
+# Quick Start React Project
 
-## 本地开发
+快速开始一个 React 项目
+
+### 依赖
+
+> [React](https://reactjs.org/) + [TS](https://www.typescriptlang.org/) + [Emotion](https://emotion.sh/)
+
+### 开始
 
 ```bash
-$ git clone git@gitlab.stars-mine.com:topholder-fe/topholder-h5.git
+$ git clone git@github.com:MagnumGoYB/quick-start-react-project.git
 $ npm install && npm start
 ```
 
-打开浏览器访问 http://localhost:3000
-
-## 代码规范
+### 代码规范
 
 **提交代码时将使用 [husky](https://typicode.github.io/husky/) 工具进行 eslint + prettier 格式化**
 
@@ -17,7 +21,7 @@ $ npm install && npm start
 - Custom Hooks (自定义 Hook) - 遵循 React 官方规范
 - 变量、常量使用首字母小写+驼峰
 
-## 提交代码
+### 提交代码
 
 项目中依赖 [Commitlint](https://commitlint.js.org/) + [Gitmoji](https://gitmoji.dev/) 进行 Commit Messages 检查
 
